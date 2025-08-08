@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Watch the Build](https://img.shields.io/badge/YouTube-Watch-blue?logo=youtube)](https://www.youtube.com/playlist?list=[playlist_goes_here])
 
-This is a simple, clean [project type, e.g., blog site, landing page, portfolio] built with HTML, CSS, SCSS, and vanilla JavaScript.
+This is a simple, clean category filter page built with HTML, CSS, and vanilla JavaScript.
 
 It’s based on a Photoshop mockup called **LaBelle – Fashion PSD Templates** — purchased from [Envato/ThemeForest](https://themeforest.net/).
 
@@ -24,7 +24,7 @@ _This project is part of a free, open-source series focused on helping newer dev
 
 ## 🔗 See the site live
 
--   [Live demo on Github Pages]
+-   [Live demo on Github Pages](https://angelajholden.github.io/category-filter/)
 
 ---
 
