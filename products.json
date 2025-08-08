@@ -1,0 +1,212 @@
+[
+	{
+		"name": "Seasonal Fruit",
+		"price": 4,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit"],
+		"colors": ["red", "yellow", "green", "orange", "purple"],
+		"image": "seasonal-fruit.jpg",
+		"alt": "An outdoor market with large crate of fruit"
+	},
+	{
+		"name": "Parmesan + Pomegranate",
+		"price": 7.5,
+		"sale": false,
+		"discount": null,
+		"category": ["fruit", "cheese"],
+		"colors": ["red", "yellow"],
+		"image": "parmesan-pomegranate.jpg",
+		"alt": "Blocks of parmesan cheese with pomegranate seeds"
+	},
+	{
+		"name": "Glass of Rose Wine",
+		"price": 5.5,
+		"sale": false,
+		"discount": null,
+		"category": ["alcohol"],
+		"colors": ["pink"],
+		"image": "rose-wine.jpg",
+		"alt": "Two glasses of Rose wine"
+	},
+	{
+		"name": "Yellow Tulips",
+		"price": 8,
+		"sale": true,
+		"discount": 15,
+		"category": ["flowers"],
+		"colors": ["yellow", "green"],
+		"image": "yellow-tulips.jpg",
+		"alt": "A bunch of freshly picked tulips"
+	},
+	{
+		"name": "Eucalyptus",
+		"price": 6,
+		"sale": false,
+		"discount": null,
+		"category": ["plant"],
+		"colors": ["green"],
+		"image": "eucalyptus.jpg",
+		"alt": "A single branch of eucalyptus"
+	},
+	{
+		"name": "Fruit Smoothie",
+		"price": 9,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit"],
+		"colors": ["red", "yellow", "green", "orange", "purple", "blue"],
+		"image": "fruit-smoothie.jpg",
+		"alt": "An overflowing smoothie with fruit and berries"
+	},
+	{
+		"name": "Raspberry + Pistachio Cake",
+		"price": 15.5,
+		"sale": true,
+		"discount": 10,
+		"category": ["cake", "fruit", "nuts"],
+		"colors": ["red", "green"],
+		"image": "raspberry-pistachio-cake.jpg",
+		"alt": "Pistachio cake topped with raspberries and icing"
+	},
+	{
+		"name": "Glass of Riesling",
+		"price": 5.5,
+		"sale": false,
+		"discount": null,
+		"category": ["wine"],
+		"colors": ["yellow"],
+		"image": "glass-of-riesling.jpg",
+		"alt": "Close up wine glass with riesling"
+	},
+	{
+		"name": "Fresh Lemons",
+		"price": 3,
+		"sale": false,
+		"discount": null,
+		"category": ["fruit"],
+		"colors": ["yellow", "green"],
+		"image": "fresh-lemons.jpg",
+		"alt": "Sliced lemons next to their branch"
+	},
+	{
+		"name": "Savory Charcuterie Board",
+		"price": 24,
+		"sale": false,
+		"discount": null,
+		"category": ["cheese", "olives", "salami", "prosciutto"],
+		"colors": ["red", "yellow", "green"],
+		"image": "savory-charcuterie-board.jpg",
+		"alt": "Charcuterie board with cheese, meat and olives"
+	},
+	{
+		"name": "Blueberry Pound Cake",
+		"price": 10,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit", "cake", "berries"],
+		"colors": ["blue", "purple", "white"],
+		"image": "blueberry-pound-cake.jpg",
+		"alt": "A loaf of blueberry poundcake with icing"
+	},
+	{
+		"name": "Raspberry Jam Cheesecake",
+		"price": 14,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit", "berries", "cheese"],
+		"colors": ["red", "white"],
+		"image": "raspberry-jam-cheesecake.jpg",
+		"alt": "Slice of raspberry jam cheesecake on a plate"
+	},
+	{
+		"name": "Espresso",
+		"price": 4,
+		"sale": false,
+		"discount": null,
+		"category": ["coffee"],
+		"colors": ["brown"],
+		"image": "espresso.jpg",
+		"alt": "A small cup of espresso"
+	},
+	{
+		"name": "Watermelon Wedge",
+		"price": 2.5,
+		"sale": false,
+		"discount": null,
+		"category": ["fruit"],
+		"colors": ["red", "green", "black"],
+		"image": "watermelon-wedge.jpg",
+		"alt": "Close up view of freshly sliced watermelon"
+	},
+	{
+		"name": "Honey Dipper with Lemon",
+		"price": 4,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit", "honey"],
+		"colors": ["yellow", "gold"],
+		"image": "honey-dipper-with-lemon.jpg",
+		"alt": "Honey dipper submerged in honey with a lemon slice"
+	},
+	{
+		"name": "Coffee Beans",
+		"price": 12.5,
+		"sale": true,
+		"discount": 30,
+		"category": ["coffee"],
+		"colors": ["brown"],
+		"image": "coffee-beans.jpg",
+		"alt": "Close up of coffee beans"
+	},
+	{
+		"name": "Blueberry Cheesecake",
+		"price": 7.5,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit", "cheese"],
+		"colors": ["purple", "blue", "white"],
+		"image": "blueberry-cheesecake.jpg",
+		"alt": "Three slices of blueberry cheesecake on a plate"
+	},
+	{
+		"name": "Cup of Joe",
+		"price": 1.5,
+		"sale": false,
+		"discount": null,
+		"category": ["coffee"],
+		"colors": ["brown"],
+		"image": "cup-of-joe.jpg",
+		"alt": "A cup of coffee from above"
+	},
+	{
+		"name": "Fruit Charcuterie",
+		"price": 42,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit", "nuts"],
+		"colors": ["red", "yellow", "green", "orange", "purple", "pink"],
+		"image": "fruit-charcuterie.jpg",
+		"alt": "A large fruit charcuterie board with nuts"
+	},
+	{
+		"name": "Honey Crisp Apples",
+		"price": 6.5,
+		"sale": true,
+		"discount": 20,
+		"category": ["fruit"],
+		"colors": ["red"],
+		"image": "honeycrisp-apple.jpg",
+		"alt": "A large bunch of washed apples"
+	},
+	{
+		"name": "Carrot Cake",
+		"price": 4,
+		"sale": false,
+		"discount": null,
+		"category": ["carrots", "cake"],
+		"colors": ["orange", "brown"],
+		"image": "carrot-cake.jpg",
+		"alt": "A slice of carrot cake"
+	}
+]
