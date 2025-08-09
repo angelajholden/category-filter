@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Category Filter</title>
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="access-hidden">Category Filter Project</h1>
+			<div class="meta_header">
+				<div class="meta_item">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M448 64L64 240.14h200a8 8 0 018 8V448z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /></svg>
+					<div class="meta_headline">Free shipping all around the world</div>
+					<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+				</div>
+				<div class="meta_item">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+						<path d="M416.07 272a160 160 0 10-160 160 160 160 0 00160-160zM142.12 91.21A46.67 46.67 0 00112 80l-2.79.08C83.66 81.62 64 104 64.07 131c0 13.21 4.66 19.37 10.88 27.23a4.55 4.55 0 003.24 1.77h.88a3.23 3.23 0 002.54-1.31L142.38 99a5.38 5.38 0 001.55-4 5.26 5.26 0 00-1.81-3.79zM369.88 91.21A46.67 46.67 0 01400 80l2.79.08C428.34 81.62 448 104 447.93 131c0 13.21-4.66 19.37-10.88 27.23a4.55 4.55 0 01-3.24 1.76h-.88a3.23 3.23 0 01-2.54-1.31L369.62 99a5.38 5.38 0 01-1.55-4 5.26 5.26 0 011.81-3.79z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
+						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256.07 160v112h-80M416.07 432l-40-40M96.07 432l40-40" />
+					</svg>
+					<div class="meta_headline">Online support 24/7</div>
+					<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+				</div>
+				<div class="meta_item">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+						<rect x="32" y="80" width="448" height="256" rx="16" ry="16" transform="rotate(180 256 208)" fill="none" stroke="" stroke-linejoin="round" stroke-width="32" />
+						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M64 384h384M96 432h320" />
+						<circle cx="256" cy="208" r="80" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<path d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80M480 256a80 80 0 00-80 80M32 256a80 80 0 0180 80" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+					</svg>
+					<div class="meta_headline">Money back guarantee</div>
+					<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+				</div>
+			</div>
+			<div class="user_meta">
+				<button aria-label="Pick a Currency" class="user_drop">
+					<span>USD</span>
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+				</button>
+				<button aria-label="Pick a Language" class="user_drop">
+					<span>
+						Language:
+						<strong>Eng</strong>
+					</span>
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+				</button>
+			</div>
+			<div class="user_meta site_name">LaBelle</div>
+			<div class="user_meta">
+				<button aria-label="My Account" class="user_drop">
+					<span>My Account</span>
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+				</button>
+				<button aria-label="Search the site" class="user_drop">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+				</button>
+				<button aria-label="Cart">
+					<span class="count">0</span>
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+						<path d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<path d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+					</svg>
+				</button>
+				<button aria-label="Open Menu" aria-controls="mainNav" aria-expanded="false">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" /></svg>
+				</button>
+			</div>
+			<nav id="mainNav" class="navigation">
+				<button aria-label="Close Menu">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
+				</button>
+				<ul class="main_menu">
+					<li class="menu_item"><a href="#">Home</a></li>
+					<li class="menu_item"><a href="#">Shop</a></li>
+					<li class="menu_item"><a href="#">Blog</a></li>
+					<li class="menu_item"><a href="#">Pages</a></li>
+					<li class="menu_item"><a href="#">Features</a></li>
+					<li class="menu_item"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<div class="page_name">Category Filter</div>
+			<div class="grid-wrap">
+				<div class="product_meta">
+					<p class="showing">
+						Showing
+						<span>1</span>
+						&mdash;
+						<span>6</span>
+						of
+						<span>21</span>
+						Results
+					</p>
+					<div class="sort">
+						Sort by
+						<button aria-label="Sort By">
+							Default
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+						</button>
+						<ul class="user_drop">
+							<li>A &mdash; Z</li>
+							<li>Z &mdash; A</li>
+							<li>Low &dash; High</li>
+							<li>High &dash; Low</li>
+						</ul>
+					</div>
+					<div class="view">
+						<button aria-label="Grid View">
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+								<rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+							</svg>
+						</button>
+						<button aria-label="List View">
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+								<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288" />
+								<circle cx="80" cy="144" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<circle cx="80" cy="256" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<circle cx="80" cy="368" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<aside class="sidebar_filter">
+					<form id="filters" aria-label="Product Filters">
+						<h3 class="tertiary-heading">
+							<label for="search">Search</label>
+						</h3>
+						<input type="search" id="search" name="search" />
+
+						<h3 class="tertiary-heading">Category</h3>
+						<fieldset>
+							<legend class="access-hidden">Category</legend>
+							<label>
+								<input type="checkbox" name="category" value="fruit" />
+								Fruit
+							</label>
+							<label>
+								<input type="checkbox" name="category" value="cheese" />
+								Cheese
+							</label>
+							<label>
+								<input type="checkbox" name="category" value="fruit" />
+								Fruit
+							</label>
+							<label>
+								<input type="checkbox" name="category" value="cheese" />
+								Cheese
+							</label>
+							<label>
+								<input type="checkbox" name="category" value="fruit" />
+								Fruit
+							</label>
+							<label>
+								<input type="checkbox" name="category" value="cheese" />
+								Cheese
+							</label>
+						</fieldset>
+
+						<h3 class="tertiary-heading">Colors</h3>
+						<fieldset>
+							<legend class="access-hidden">Colors</legend>
+							<label>
+								<input type="checkbox" name="price" value="pink" />
+								Pink
+							</label>
+							<label>
+								<input type="checkbox" name="price" value="yellow" />
+								Yellow
+							</label>
+							<label>
+								<input type="checkbox" name="price" value="orange" />
+								Orange
+							</label>
+							<label>
+								<input type="checkbox" name="price" value="pink" />
+								Pink
+							</label>
+							<label>
+								<input type="checkbox" name="price" value="yellow" />
+								Yellow
+							</label>
+							<label>
+								<input type="checkbox" name="price" value="orange" />
+								Orange
+							</label>
+						</fieldset>
+					</form>
+				</aside>
+				<div id="products" class="product_grid">
+					<!-- <article class="product">
+						<figure class="figure">
+							<img src="images/blueberry-cheesecake.jpg" alt="blueberry cheesecake" />
+						</figure>
+						<h2 class="product_name">Blueberry Cheesecake</h2>
+						<div class="sale">20%</div>
+						<p>
+							<span class="discount_price">$6.00</span>
+							<span class="price">$7.50</span>
+						</p>
+					</article> -->
+				</div>
+				<button class="button">Load More</button>
+			</div>
+			<div class="social_wrap">
+				<section class="instagram">
+					<h2 class="secondary-heading">Follow us on Instagram</h2>
+					<div class="insta_grid">
+						<figure class="figure">
+							<img src="images/cup-of-joe.jpg" alt="cup of coffee" />
+						</figure>
+						<figure class="figure">
+							<img src="images/cup-of-joe.jpg" alt="cup of coffee" />
+						</figure>
+						<figure class="figure">
+							<img src="images/cup-of-joe.jpg" alt="cup of coffee" />
+						</figure>
+						<figure class="figure">
+							<img src="images/cup-of-joe.jpg" alt="cup of coffee" />
+						</figure>
+						<figure class="figure">
+							<img src="images/cup-of-joe.jpg" alt="cup of coffee" />
+						</figure>
+						<figure class="figure">
+							<img src="images/cup-of-joe.jpg" alt="cup of coffee" />
+						</figure>
+					</div>
+				</section>
+				<section class="newsletter">
+					<h2 class="secondary_heading">Sign up for the Newsletter</h2>
+					<form action="#" class="form">
+						<label class="access-hidden" for="email">Email</label>
+						<input type="email" class="input" placeholder="Your Email Address" required />
+						<button class="submit">Subscribe</button>
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<section class="footer_items">
+				<h3 class="footer_heading">About Us</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro blanditiis doloremque, soluta fuga asperiores?</p>
+				<ul class="footer_list">
+					<li>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" /></svg>
+						<a href="tel:+16668881212">(666) 888-1212</a>
+						<a href="tel:+16668881212">(666) 888-1212</a>
+					</li>
+					<li>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+							<rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112" />
+							<a href="mailto:info@angelajholden.com">info@angelajholden.com</a>
+						</svg>
+					</li>
+					<li>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+							<path d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+							<circle cx="256" cy="192" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						</svg>
+						<address>123 Main Street St. Paul, MN 54321</address>
+					</li>
+				</ul>
+			</section>
+			<section class="footer_items">
+				<h3 class="footer_heading">Corporate Info</h3>
+				<ul>
+					<li><a href="#">Item One</a></li>
+					<li><a href="#">Item Two</a></li>
+					<li><a href="#">Item Three</a></li>
+					<li><a href="#">Item Four</a></li>
+					<li><a href="#">Item Five</a></li>
+					<li><a href="#">Item Six</a></li>
+				</ul>
+			</section>
+			<section class="footer_items">
+				<h3 class="footer_heading">My Account</h3>
+				<ul>
+					<li><a href="#">Item One</a></li>
+					<li><a href="#">Item Two</a></li>
+					<li><a href="#">Item Three</a></li>
+					<li><a href="#">Item Four</a></li>
+					<li><a href="#">Item Five</a></li>
+					<li><a href="#">Item Six</a></li>
+				</ul>
+			</section>
+			<section class="footer_items">
+				<h3 class="footer_heading">Follow Us</h3>
+				<ul>
+					<li><a href="#">Item One</a></li>
+					<li><a href="#">Item Two</a></li>
+					<li><a href="#">Item Three</a></li>
+					<li><a href="#">Item Four</a></li>
+					<li><a href="#">Item Five</a></li>
+					<li><a href="#">Item Six</a></li>
+				</ul>
+			</section>
+			<section class="footer_items">
+				<h3 class="footer_heading">Departments</h3>
+				<ul>
+					<li><a href="#">Item One</a></li>
+					<li><a href="#">Item Two</a></li>
+					<li><a href="#">Item Three</a></li>
+					<li><a href="#">Item Four</a></li>
+					<li><a href="#">Item Five</a></li>
+					<li><a href="#">Item Six</a></li>
+				</ul>
+			</section>
+			<div class="footer_meta">
+				&copy;
+				<span id="date"></span>
+				Angela J Holden. All Rights Reserved. Design Name Labelle.
+			</div>
+		</footer>
+	</body>
+</html>
