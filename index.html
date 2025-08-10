@@ -4,128 +4,123 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Category Filter</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
 		<script defer src="script.js"></script>
 	</head>
 	<body>
 		<header class="header">
 			<h1 class="access-hidden">Category Filter Project</h1>
+			<!-- Dark BG -->
 			<div class="meta_header">
-				<div class="meta_item">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M448 64L64 240.14h200a8 8 0 018 8V448z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /></svg>
-					<div class="meta_headline">Free shipping all around the world</div>
-					<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-				</div>
-				<div class="meta_item">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-						<path d="M416.07 272a160 160 0 10-160 160 160 160 0 00160-160zM142.12 91.21A46.67 46.67 0 00112 80l-2.79.08C83.66 81.62 64 104 64.07 131c0 13.21 4.66 19.37 10.88 27.23a4.55 4.55 0 003.24 1.77h.88a3.23 3.23 0 002.54-1.31L142.38 99a5.38 5.38 0 001.55-4 5.26 5.26 0 00-1.81-3.79zM369.88 91.21A46.67 46.67 0 01400 80l2.79.08C428.34 81.62 448 104 447.93 131c0 13.21-4.66 19.37-10.88 27.23a4.55 4.55 0 01-3.24 1.76h-.88a3.23 3.23 0 01-2.54-1.31L369.62 99a5.38 5.38 0 01-1.55-4 5.26 5.26 0 011.81-3.79z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
-						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256.07 160v112h-80M416.07 432l-40-40M96.07 432l40-40" />
-					</svg>
-					<div class="meta_headline">Online support 24/7</div>
-					<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-				</div>
-				<div class="meta_item">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-						<rect x="32" y="80" width="448" height="256" rx="16" ry="16" transform="rotate(180 256 208)" fill="none" stroke="" stroke-linejoin="round" stroke-width="32" />
-						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M64 384h384M96 432h320" />
-						<circle cx="256" cy="208" r="80" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-						<path d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80M480 256a80 80 0 00-80 80M32 256a80 80 0 0180 80" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-					</svg>
-					<div class="meta_headline">Money back guarantee</div>
-					<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+				<div class="wrap">
+					<div class="meta_item">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M448 64L64 240.14h200a8 8 0 018 8V448z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" /></svg>
+						<div class="item_wrap">
+							<div class="meta_headline serif">Free shipping all around the world</div>
+							<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+						</div>
+					</div>
+					<div class="meta_item">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+							<path d="M416.07 272a160 160 0 10-160 160 160 160 0 00160-160zM142.12 91.21A46.67 46.67 0 00112 80l-2.79.08C83.66 81.62 64 104 64.07 131c0 13.21 4.66 19.37 10.88 27.23a4.55 4.55 0 003.24 1.77h.88a3.23 3.23 0 002.54-1.31L142.38 99a5.38 5.38 0 001.55-4 5.26 5.26 0 00-1.81-3.79zM369.88 91.21A46.67 46.67 0 01400 80l2.79.08C428.34 81.62 448 104 447.93 131c0 13.21-4.66 19.37-10.88 27.23a4.55 4.55 0 01-3.24 1.76h-.88a3.23 3.23 0 01-2.54-1.31L369.62 99a5.38 5.38 0 01-1.55-4 5.26 5.26 0 011.81-3.79z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
+							<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256.07 160v112h-80M416.07 432l-40-40M96.07 432l40-40" />
+						</svg>
+						<div class="item_wrap">
+							<div class="meta_headline serif">Online support 24/7</div>
+							<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+						</div>
+					</div>
+					<div class="meta_item">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+							<rect x="32" y="80" width="448" height="256" rx="16" ry="16" transform="rotate(180 256 208)" fill="none" stroke="" stroke-linejoin="round" stroke-width="32" />
+							<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M64 384h384M96 432h320" />
+							<circle cx="256" cy="208" r="80" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+							<path d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80M480 256a80 80 0 00-80 80M32 256a80 80 0 0180 80" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						</svg>
+						<div class="item_wrap">
+							<div class="meta_headline serif">Money back guarantee</div>
+							<div class="meta_tagline">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="user_meta">
-				<button aria-label="Pick a Currency" class="user_drop">
-					<span>USD</span>
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
-				</button>
-				<button aria-label="Pick a Language" class="user_drop">
-					<span>
-						Language:
-						<strong>Eng</strong>
-					</span>
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
-				</button>
-			</div>
-			<div class="user_meta site_name">LaBelle</div>
-			<div class="user_meta">
-				<button aria-label="My Account" class="user_drop">
-					<span>My Account</span>
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
-				</button>
-				<button aria-label="Search the site" class="user_drop">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
-				</button>
-				<button aria-label="Cart">
-					<span class="count">0</span>
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-						<path d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-						<path d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-					</svg>
-				</button>
-				<button aria-label="Open Menu" aria-controls="mainNav" aria-expanded="false">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" /></svg>
-				</button>
-			</div>
-			<nav id="mainNav" class="navigation">
-				<button aria-label="Close Menu">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
-				</button>
-				<ul class="main_menu">
-					<li class="menu_item"><a href="#">Home</a></li>
-					<li class="menu_item"><a href="#">Shop</a></li>
-					<li class="menu_item"><a href="#">Blog</a></li>
-					<li class="menu_item"><a href="#">Pages</a></li>
-					<li class="menu_item"><a href="#">Features</a></li>
-					<li class="menu_item"><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="main">
-			<div class="page_name">Category Filter</div>
-			<div class="grid-wrap">
-				<div class="product_meta">
-					<p class="showing">
-						Showing
-						<span>1</span>
-						&mdash;
-						<span>6</span>
-						of
-						<span>21</span>
-						Results
-					</p>
-					<div class="sort">
-						Sort by
-						<button aria-label="Sort By">
-							Default
+			<!-- Start White BG part of Header -->
+			<div class="wrap">
+				<div class="user_meta-wrap">
+					<div class="user_meta">
+						<button aria-label="Pick a Currency" class="user_drop">
+							<span>USD</span>
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
 						</button>
-						<ul class="user_drop">
-							<li>A &mdash; Z</li>
-							<li>Z &mdash; A</li>
-							<li>Low &dash; High</li>
-							<li>High &dash; Low</li>
-						</ul>
+						<button aria-label="Pick a Language" class="user_drop">
+							<span>
+								Language:
+								<strong>Eng</strong>
+							</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+						</button>
 					</div>
-					<div class="view">
-						<button aria-label="Grid View">
+					<div class="user_meta site_name">
+						<span class="access-hidden">LaBelle</span>
+						<svg aria-hidden="true" viewBox="0 0 2623 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2">
+							<g transform="matrix(2.08333,0,0,2.08333,0,0)">
+								<g transform="matrix(1,0,0,1,-424.352,-338.72)">
+									<path d="M584.524,481.735L580.306,541.079L424.352,541.079L424.352,531.095C426.602,530.907 429.86,530.579 434.126,530.11C438.392,529.642 441.368,529.032 443.056,528.282C445.868,527.063 447.907,525.282 449.173,522.938C450.438,520.595 451.071,517.595 451.071,513.938L451.071,371.063C451.071,367.876 450.532,365.063 449.454,362.626C448.376,360.188 446.243,358.22 443.056,356.72C440.899,355.595 437.876,354.493 433.985,353.415C430.095,352.337 426.884,351.704 424.352,351.517L424.352,341.532L508.587,341.532L508.587,351.517C505.962,351.61 502.563,352.079 498.392,352.923C494.22,353.767 491.196,354.517 489.321,355.173C486.134,356.298 483.954,358.22 482.782,360.938C481.61,363.657 481.024,366.563 481.024,369.657L481.024,503.673C481.024,509.86 481.329,514.665 481.938,518.087C482.548,521.509 483.977,524.157 486.227,526.032C488.384,527.72 491.595,528.821 495.86,529.337C500.126,529.852 506.102,530.11 513.79,530.11C517.259,530.11 520.868,530.017 524.618,529.829C528.368,529.642 531.931,529.267 535.306,528.704C538.587,528.142 541.61,527.368 544.376,526.384C547.142,525.399 549.181,524.157 550.493,522.657C554.337,518.345 558.813,511.806 563.923,503.04C569.032,494.274 572.571,487.173 574.54,481.735L584.524,481.735Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+									<path d="M784.212,541.079L701.102,541.079L701.102,531.095C708.415,530.626 714.485,529.688 719.313,528.282C724.142,526.876 726.556,525.142 726.556,523.079C726.556,522.235 726.462,521.204 726.274,519.985C726.087,518.767 725.806,517.688 725.431,516.751L708.837,472.032L638.946,472.032C636.321,478.595 634.188,484.313 632.548,489.188C630.907,494.063 629.431,498.563 628.118,502.688C626.899,506.72 626.056,510.001 625.587,512.532C625.118,515.063 624.884,517.126 624.884,518.72C624.884,522.47 627.837,525.376 633.743,527.438C639.649,529.501 646.306,530.72 653.712,531.095L653.712,541.079L578.618,541.079L578.618,531.095C581.056,530.907 584.102,530.368 587.759,529.477C591.415,528.587 594.415,527.392 596.759,525.892C600.509,523.36 603.415,520.712 605.477,517.946C607.54,515.181 609.556,511.36 611.524,506.485C621.556,481.454 632.618,453.329 644.712,422.11C656.806,390.892 667.587,363.095 677.056,338.72L688.306,338.72L754.821,510.845C756.227,514.501 757.821,517.454 759.602,519.704C761.384,521.954 763.868,524.157 767.056,526.313C769.212,527.626 772.024,528.727 775.493,529.618C778.962,530.509 781.868,531.001 784.212,531.095L784.212,541.079ZM703.774,459.517L673.54,382.173L643.868,459.517L703.774,459.517Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+									<path d="M932.852,448.126C938.665,452.063 943.493,457.22 947.337,463.595C951.181,469.97 953.102,477.704 953.102,486.798C953.102,496.079 951.087,504.142 947.056,510.985C943.024,517.829 937.774,523.454 931.306,527.86C925.024,532.173 917.923,535.454 910.001,537.704C902.079,539.954 893.899,541.079 885.462,541.079L790.962,541.079L790.962,531.095C793.212,530.907 796.493,530.509 800.806,529.899C805.118,529.29 808.212,528.563 810.087,527.72C812.993,526.407 815.056,524.649 816.274,522.446C817.493,520.243 818.102,517.407 818.102,513.938L818.102,370.501C818.102,367.313 817.563,364.501 816.485,362.063C815.407,359.626 813.274,357.657 810.087,356.157C807.274,354.751 804.134,353.673 800.665,352.923C797.196,352.173 794.29,351.704 791.946,351.517L791.946,341.532L884.056,341.532C891.181,341.532 898.001,342.235 904.517,343.642C911.032,345.048 917.243,347.532 923.149,351.095C928.681,354.376 933.227,358.829 936.79,364.454C940.352,370.079 942.134,376.923 942.134,384.985C942.134,392.017 940.868,398.274 938.337,403.759C935.806,409.243 932.243,413.954 927.649,417.892C923.337,421.642 918.392,424.806 912.813,427.384C907.235,429.962 901.212,431.954 894.743,433.36L894.743,434.626C900.462,435.282 906.86,436.712 913.938,438.915C921.017,441.118 927.321,444.188 932.852,448.126ZM898.962,418.032C902.431,414.001 904.845,409.595 906.204,404.813C907.563,400.032 908.243,394.36 908.243,387.798C908.243,376.829 905.243,368.227 899.243,361.993C893.243,355.759 883.774,352.642 870.837,352.642C867.837,352.642 864.063,352.712 859.517,352.852C854.97,352.993 851.149,353.11 848.056,353.204L848.056,429.845L865.915,429.845C873.602,429.845 880.188,428.86 885.673,426.892C891.157,424.923 895.587,421.97 898.962,418.032ZM918.368,481.735C918.368,469.923 914.407,460.22 906.485,452.626C898.563,445.032 887.243,441.235 872.524,441.235C866.524,441.235 861.462,441.306 857.337,441.446C853.212,441.587 850.118,441.704 848.056,441.798L848.056,512.11C848.056,518.017 850.446,522.47 855.227,525.47C860.009,528.47 866.665,529.97 875.196,529.97C889.165,529.97 899.852,525.892 907.259,517.735C914.665,509.579 918.368,497.579 918.368,481.735Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+									<path d="M1147.45,482.298L1143.65,541.079L977.993,541.079L977.993,531.095C980.806,530.907 984.556,530.509 989.243,529.899C993.931,529.29 996.977,528.657 998.384,528.001C1001.38,526.595 1003.47,524.767 1004.64,522.517C1005.81,520.267 1006.4,517.407 1006.4,513.938L1006.4,370.501C1006.4,367.407 1005.88,364.665 1004.85,362.274C1003.82,359.884 1001.67,357.938 998.384,356.438C995.852,355.22 992.454,354.142 988.188,353.204C983.923,352.267 980.524,351.704 977.993,351.517L977.993,341.532L1132.4,341.532L1132.4,389.626L1121.85,389.626C1119.98,382.501 1115.92,374.931 1109.69,366.915C1103.45,358.899 1097.52,354.517 1091.9,353.767C1088.99,353.392 1085.52,353.11 1081.49,352.923C1077.46,352.735 1072.87,352.642 1067.71,352.642L1036.35,352.642L1036.35,431.954L1058.85,431.954C1066.07,431.954 1071.35,431.274 1074.67,429.915C1078,428.556 1080.93,426.282 1083.46,423.095C1085.52,420.376 1087.28,416.743 1088.74,412.196C1090.19,407.649 1091.15,403.36 1091.62,399.329L1102.16,399.329L1102.16,477.376L1091.62,477.376C1091.24,472.876 1090.24,468.118 1088.6,463.102C1086.95,458.087 1085.24,454.454 1083.46,452.204C1080.56,448.548 1077.25,446.157 1073.55,445.032C1069.85,443.907 1064.95,443.345 1058.85,443.345L1036.35,443.345L1036.35,503.251C1036.35,509.251 1036.77,513.985 1037.62,517.454C1038.46,520.923 1040.1,523.548 1042.54,525.329C1044.98,527.11 1048.31,528.259 1052.52,528.774C1056.74,529.29 1062.74,529.548 1070.52,529.548L1082.76,529.548C1087.82,529.548 1092.09,529.36 1095.56,528.985C1099.12,528.61 1102.8,527.931 1106.6,526.946C1110.39,525.962 1113.09,524.626 1114.68,522.938C1118.99,518.438 1123.52,511.618 1128.25,502.477C1132.99,493.337 1136.01,486.61 1137.32,482.298L1147.45,482.298Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+									<path d="M1328.01,481.735L1323.79,541.079L1167.84,541.079L1167.84,531.095C1170.09,530.907 1173.35,530.579 1177.61,530.11C1181.88,529.642 1184.85,529.032 1186.54,528.282C1189.35,527.063 1191.39,525.282 1192.66,522.938C1193.92,520.595 1194.56,517.595 1194.56,513.938L1194.56,371.063C1194.56,367.876 1194.02,365.063 1192.94,362.626C1191.86,360.188 1189.73,358.22 1186.54,356.72C1184.38,355.595 1181.36,354.493 1177.47,353.415C1173.58,352.337 1170.37,351.704 1167.84,351.517L1167.84,341.532L1252.07,341.532L1252.07,351.517C1249.45,351.61 1246.05,352.079 1241.88,352.923C1237.7,353.767 1234.68,354.517 1232.81,355.173C1229.62,356.298 1227.44,358.22 1226.27,360.938C1225.1,363.657 1224.51,366.563 1224.51,369.657L1224.51,503.673C1224.51,509.86 1224.81,514.665 1225.42,518.087C1226.03,521.509 1227.46,524.157 1229.71,526.032C1231.87,527.72 1235.08,528.821 1239.35,529.337C1243.61,529.852 1249.59,530.11 1257.27,530.11C1260.74,530.11 1264.35,530.017 1268.1,529.829C1271.85,529.642 1275.41,529.267 1278.79,528.704C1282.07,528.142 1285.1,527.368 1287.86,526.384C1290.63,525.399 1292.66,524.157 1293.98,522.657C1297.82,518.345 1302.3,511.806 1307.41,503.04C1312.52,494.274 1316.06,487.173 1318.02,481.735L1328.01,481.735Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+									<path d="M1501.82,481.735L1497.6,541.079L1341.65,541.079L1341.65,531.095C1343.9,530.907 1347.16,530.579 1351.42,530.11C1355.69,529.642 1358.66,529.032 1360.35,528.282C1363.16,527.063 1365.2,525.282 1366.47,522.938C1367.74,520.595 1368.37,517.595 1368.37,513.938L1368.37,371.063C1368.37,367.876 1367.83,365.063 1366.75,362.626C1365.67,360.188 1363.54,358.22 1360.35,356.72C1358.2,355.595 1355.17,354.493 1351.28,353.415C1347.39,352.337 1344.18,351.704 1341.65,351.517L1341.65,341.532L1425.88,341.532L1425.88,351.517C1423.26,351.61 1419.86,352.079 1415.69,352.923C1411.52,353.767 1408.49,354.517 1406.62,355.173C1403.43,356.298 1401.25,358.22 1400.08,360.938C1398.91,363.657 1398.32,366.563 1398.32,369.657L1398.32,503.673C1398.32,509.86 1398.63,514.665 1399.24,518.087C1399.85,521.509 1401.27,524.157 1403.52,526.032C1405.68,527.72 1408.89,528.821 1413.16,529.337C1417.42,529.852 1423.4,530.11 1431.09,530.11C1434.56,530.11 1438.16,530.017 1441.91,529.829C1445.66,529.642 1449.23,529.267 1452.6,528.704C1455.88,528.142 1458.91,527.368 1461.67,526.384C1464.44,525.399 1466.48,524.157 1467.79,522.657C1471.63,518.345 1476.11,511.806 1481.22,503.04C1486.33,494.274 1489.87,487.173 1491.84,481.735L1501.82,481.735Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+									<path d="M1683.23,482.298L1679.43,541.079L1513.77,541.079L1513.77,531.095C1516.59,530.907 1520.34,530.509 1525.02,529.899C1529.71,529.29 1532.76,528.657 1534.16,528.001C1537.16,526.595 1539.25,524.767 1540.42,522.517C1541.6,520.267 1542.18,517.407 1542.18,513.938L1542.18,370.501C1542.18,367.407 1541.66,364.665 1540.63,362.274C1539.6,359.884 1537.45,357.938 1534.16,356.438C1531.63,355.22 1528.24,354.142 1523.97,353.204C1519.7,352.267 1516.31,351.704 1513.77,351.517L1513.77,341.532L1668.18,341.532L1668.18,389.626L1657.63,389.626C1655.76,382.501 1651.7,374.931 1645.47,366.915C1639.24,358.899 1633.31,354.517 1627.68,353.767C1624.77,353.392 1621.31,353.11 1617.27,352.923C1613.24,352.735 1608.65,352.642 1603.49,352.642L1572.13,352.642L1572.13,431.954L1594.63,431.954C1601.85,431.954 1607.13,431.274 1610.45,429.915C1613.78,428.556 1616.71,426.282 1619.24,423.095C1621.31,420.376 1623.06,416.743 1624.52,412.196C1625.97,407.649 1626.93,403.36 1627.4,399.329L1637.95,399.329L1637.95,477.376L1627.4,477.376C1627.02,472.876 1626.02,468.118 1624.38,463.102C1622.74,458.087 1621.02,454.454 1619.24,452.204C1616.34,448.548 1613.03,446.157 1609.33,445.032C1605.63,443.907 1600.73,443.345 1594.63,443.345L1572.13,443.345L1572.13,503.251C1572.13,509.251 1572.56,513.985 1573.4,517.454C1574.24,520.923 1575.88,523.548 1578.32,525.329C1580.76,527.11 1584.09,528.259 1588.31,528.774C1592.52,529.29 1598.52,529.548 1606.31,529.548L1618.54,529.548C1623.6,529.548 1627.87,529.36 1631.34,528.985C1634.9,528.61 1638.58,527.931 1642.38,526.946C1646.17,525.962 1648.87,524.626 1650.46,522.938C1654.77,518.438 1659.3,511.618 1664.03,502.477C1668.77,493.337 1671.79,486.61 1673.1,482.298L1683.23,482.298Z" style="fill: rgb(101, 135, 132); fill-rule: nonzero" />
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="user_meta">
+						<button aria-label="My Account" class="user_drop">
+							<span>My Account</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+						</button>
+						<button aria-label="Search the site" class="user_drop">
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-								<rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-								<rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-								<rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-								<rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+								<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448" />
 							</svg>
 						</button>
-						<button aria-label="List View">
+						<button aria-label="Cart">
+							<span class="count">0</span>
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-								<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288" />
-								<circle cx="80" cy="144" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-								<circle cx="80" cy="256" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-								<circle cx="80" cy="368" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<path d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+								<path d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 							</svg>
+						</button>
+						<button class="menu_button open_button" aria-label="Open Menu" aria-controls="mainNav" aria-expanded="false">
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" /></svg>
 						</button>
 					</div>
 				</div>
+				<nav id="mainNav" class="navigation">
+					<button class="menu_button close_button" aria-label="Close Menu">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
+					</button>
+					<ul class="main_menu">
+						<li class="menu_item"><a href="#">Home</a></li>
+						<li class="menu_item"><a href="#">Shop</a></li>
+						<li class="menu_item"><a href="#">Blog</a></li>
+						<li class="menu_item"><a href="#">Pages</a></li>
+						<li class="menu_item"><a href="#">Features</a></li>
+						<li class="menu_item"><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="page_name serif">Category Filter</div>
+
+			<div class="grid_wrap">
 				<aside class="sidebar_filter">
 					<form id="filters" aria-label="Product Filters">
 						<h3 class="tertiary-heading">
@@ -193,6 +188,51 @@
 					</form>
 				</aside>
 				<div id="products" class="product_grid">
+					<div class="product_meta">
+						<div class="showing">
+							Showing
+							<span>1</span>
+							&mdash;
+							<span>6</span>
+							of
+							<span>21</span>
+							Results
+						</div>
+						<div class="product_meta-wrap">
+							<div class="sort">
+								Sort by
+								<button aria-label="Sort By">
+									Default
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+								</button>
+								<ul class="user_drop">
+									<li>A &mdash; Z</li>
+									<li>Z &mdash; A</li>
+									<li>Low &dash; High</li>
+									<li>High &dash; Low</li>
+								</ul>
+							</div>
+							<div class="view">
+								View
+								<button aria-label="Grid View">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+										<rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+									</svg>
+								</button>
+								<button aria-label="List View">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+										<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288" />
+										<circle cx="80" cy="144" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<circle cx="80" cy="256" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+										<circle cx="80" cy="368" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
 					<!-- <article class="product">
 						<figure class="figure">
 							<img src="images/blueberry-cheesecake.jpg" alt="blueberry cheesecake" />
