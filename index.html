@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<script defer src="script.js"></script>
 	</head>
-	<body>
+	<body class="menu_active">
 		<header class="header">
 			<h1 class="access-hidden">Category Filter Project</h1>
 			<!-- Dark BG -->
@@ -46,11 +46,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="slider_controls">
+					<button class="slider_prev slider_button">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144" /></svg>
+					</button>
+					<button class="slider_prev slider_button">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144" /></svg>
+					</button>
+				</div>
 			</div>
 			<!-- Start White BG part of Header -->
 			<div class="wrap">
 				<div class="user_meta-wrap">
-					<div class="user_meta">
+					<!-- hide for mobile -->
+					<div class="user_meta user_meta-desktop">
 						<button aria-label="Pick a Currency" class="user_drop">
 							<span>USD</span>
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
@@ -80,7 +89,8 @@
 						</svg>
 					</div>
 					<div class="user_meta">
-						<button aria-label="My Account" class="user_drop">
+						<!-- hide my account for mobile -->
+						<button aria-label="My Account" class="user_drop user_meta-desktop">
 							<span>My Account</span>
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
 						</button>
@@ -97,11 +107,13 @@
 								<path d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 							</svg>
 						</button>
+						<!-- mobile button open, comes before the nav and is a sibling element -->
 						<button class="menu_button open_button" aria-label="Open Menu" aria-controls="mainNav" aria-expanded="false">
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" /></svg>
 						</button>
 					</div>
 				</div>
+				<!-- desktop + mobile navigation -->
 				<nav id="mainNav" class="navigation">
 					<button class="menu_button close_button" aria-label="Close Menu">
 						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
@@ -114,6 +126,24 @@
 						<li class="menu_item"><a href="#">Features</a></li>
 						<li class="menu_item"><a href="#">Contact</a></li>
 					</ul>
+					<!-- mobile only -->
+					<div class="mobile_buttons">
+						<button aria-label="My Account" class="user_drop">
+							<span>My Account</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+						</button>
+						<button aria-label="Pick a Currency" class="user_drop">
+							<span>USD</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+						</button>
+						<button aria-label="Pick a Language" class="user_drop">
+							<span>
+								Language:
+								<strong>Eng</strong>
+							</span>
+							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
+						</button>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -205,11 +235,11 @@
 									Default
 									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
 								</button>
-								<ul class="user_drop">
+								<ul class="user_drop-list">
 									<li>A &mdash; Z</li>
 									<li>Z &mdash; A</li>
-									<li>Low &dash; High</li>
-									<li>High &dash; Low</li>
+									<li>Low &mdash; High</li>
+									<li>High &mdash; Low</li>
 								</ul>
 							</div>
 							<div class="view">

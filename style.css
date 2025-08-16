@@ -55,6 +55,7 @@ button {
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 	align-items: center;
+	padding: 0;
 	border: none;
 	background-color: transparent;
 	text-transform: uppercase;
@@ -69,6 +70,17 @@ button svg {
 svg {
 	display: block;
 	stroke: var(--black);
+}
+
+@media (max-width: 960px) {
+	button {
+		padding: 0.5rem;
+	}
+
+	button svg {
+		width: 2rem;
+		height: 2rem;
+	}
 }
 
 .access-hidden {
@@ -88,9 +100,11 @@ svg {
 /* Header */
 /* Header Dark Section */
 .meta_header {
+	position: relative;
 	padding: 1rem;
 	background-color: var(--black);
 	color: var(--white);
+	z-index: 0;
 }
 
 .meta_header .wrap {
@@ -117,6 +131,55 @@ svg {
 	letter-spacing: 1px;
 }
 
+.slider_controls {
+	display: none;
+}
+
+.slider_button {
+	padding: 0;
+}
+
+.slider_button svg {
+	stroke: var(--white);
+	width: 3rem;
+	height: 3rem;
+}
+
+@media (max-width: 960px) {
+	.meta_header .wrap {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.meta_item {
+		display: none;
+	}
+
+	.meta_item:first-of-type {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.slider_controls {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 1;
+	}
+}
+
+@media (max-width: 600px) {
+	.meta_item svg {
+		display: none;
+	}
+}
+
 /* Header Light Section */
 /* Header Actions */
 .user_meta-wrap {
@@ -129,18 +192,23 @@ svg {
 
 .user_meta {
 	display: flex;
-	flex: row nowrap;
+	flex-flow: row nowrap;
 	gap: 2rem;
 }
 
 .site_name svg {
 	width: 300px;
+	max-width: 100%;
 	height: auto;
 	stroke: transparent;
 }
 
 /* Navigation */
 .menu_button {
+	display: none;
+}
+
+.mobile_buttons {
 	display: none;
 }
 
@@ -195,6 +263,54 @@ svg {
 	margin: 3rem 0;
 }
 
+@media (max-width: 960px) {
+	.site_name svg {
+		width: 175px;
+	}
+
+	.menu_button {
+		display: block;
+	}
+
+	.mobile_buttons {
+		display: block;
+	}
+
+	.user_meta-wrap {
+		padding: 0.5rem 0;
+		gap: 0.5rem;
+	}
+
+	.user_meta-desktop {
+		display: none;
+	}
+
+	.user_meta {
+		gap: 0.5rem;
+	}
+
+	.navigation {
+		visibility: hidden;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		width: 300px;
+		height: 100vh;
+		padding: 0;
+		margin: 0;
+		background-color: var(--white);
+		transform: translateX(0);
+		transition: transform 300ms ease-in-out, visibility 300ms ease-in-out;
+	}
+
+	.menu_active .navigation {
+		visibility: visible;
+		opacity: 1;
+		transform: translate(-100%);
+	}
+}
+
 /* Grid Wrap */
 .grid_wrap {
 	display: grid;
@@ -211,7 +327,7 @@ svg {
 	align-items: center;
 }
 
-button + .user_drop {
+button + .user_drop-list {
 	display: none;
 }
 
