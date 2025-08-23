@@ -159,88 +159,39 @@
 						<input type="search" id="search" name="search" />
 
 						<h3 class="tertiary-heading">Category</h3>
-						<fieldset>
+						<fieldset id="category_filter">
 							<legend class="access-hidden">Category</legend>
-							<label>
-								<input type="checkbox" name="category" value="fruit" />
-								Fruit
-							</label>
-							<label>
-								<input type="checkbox" name="category" value="cheese" />
-								Cheese
-							</label>
-							<label>
-								<input type="checkbox" name="category" value="fruit" />
-								Fruit
-							</label>
-							<label>
-								<input type="checkbox" name="category" value="cheese" />
-								Cheese
-							</label>
-							<label>
-								<input type="checkbox" name="category" value="fruit" />
-								Fruit
-							</label>
-							<label>
-								<input type="checkbox" name="category" value="cheese" />
-								Cheese
-							</label>
+							<ul id="category_filter"></ul>
 						</fieldset>
 
 						<h3 class="tertiary-heading">Colors</h3>
 						<fieldset>
 							<legend class="access-hidden">Colors</legend>
-							<label>
-								<input type="checkbox" name="price" value="pink" />
-								Pink
-							</label>
-							<label>
-								<input type="checkbox" name="price" value="yellow" />
-								Yellow
-							</label>
-							<label>
-								<input type="checkbox" name="price" value="orange" />
-								Orange
-							</label>
-							<label>
-								<input type="checkbox" name="price" value="pink" />
-								Pink
-							</label>
-							<label>
-								<input type="checkbox" name="price" value="yellow" />
-								Yellow
-							</label>
-							<label>
-								<input type="checkbox" name="price" value="orange" />
-								Orange
-							</label>
+							<ul id="color_filter"></ul>
 						</fieldset>
+						<button id="reset_products" class="button" type="button">Reset</button>
 					</form>
 				</aside>
-				<div id="products" class="product_grid">
+				<div class="product_grid-wrap">
 					<div class="product_meta">
 						<div class="showing">
 							Showing
-							<span>1</span>
+							<span id="first_item"></span>
 							&mdash;
-							<span>6</span>
+							<span id="last_item"></span>
 							of
-							<span>21</span>
+							<span id="total_items"></span>
 							Results
 						</div>
 						<div class="product_meta-wrap">
 							<div class="sort">
-								Sort by
-								<button aria-label="Sort By">
-									Default
-									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
-								</button>
-								<ul class="user_drop-list">
-									<li>A &mdash; Z</li>
-									<li>Z &mdash; A</li>
-									<li>Low &mdash; High</li>
-									<li>High &mdash; Low</li>
-								</ul>
+								<label for="select_sort">Sort By:</label>
+								<select name="sort" id="select_sort">
+									<option value="az">A &mdash; Z</option>
+									<option value="za">Z &mdash; A</option>
+									<option value="lowhigh">Low &mdash; High</option>
+									<option value="highlow">High &mdash; Low</option>
+								</select>
 							</div>
 							<div class="view">
 								View
@@ -263,19 +214,20 @@
 							</div>
 						</div>
 					</div>
-					<!-- <article class="product">
-						<figure class="figure">
-							<img src="images/blueberry-cheesecake.jpg" alt="blueberry cheesecake" />
-						</figure>
-						<h2 class="product_name">Blueberry Cheesecake</h2>
-						<div class="sale">20%</div>
-						<p>
-							<span class="discount_price">$6.00</span>
-							<span class="price">$7.50</span>
-						</p>
-					</article> -->
+					<div id="products" class="product_grid"></div>
+					<div class="product_meta">
+						<div class="showing">
+							Showing
+							<span id="first_item"></span>
+							&mdash;
+							<span id="last_item"></span>
+							of
+							<span id="total_items"></span>
+							Results
+						</div>
+					</div>
 				</div>
-				<button class="button">Load More</button>
+				<button id="load_more" class="button">Load More</button>
 			</div>
 		</main>
 		<footer class="footer">
