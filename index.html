@@ -100,7 +100,7 @@
 								<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448" />
 							</svg>
 						</button>
-						<button aria-label="Cart">
+						<button class="user_drop" aria-label="Cart">
 							<span class="count">0</span>
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 								<path d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
@@ -153,19 +153,19 @@
 			<div class="grid_wrap">
 				<aside class="sidebar_filter">
 					<form id="filters" aria-label="Product Filters">
-						<h3 class="tertiary-heading">
+						<h3 class="tertiary-heading serif">
 							<label for="search">Search</label>
 						</h3>
-						<input type="search" id="search" name="search" />
+						<input type="search" id="search" name="search" placeholder="Search by Name" />
 
-						<h3 class="tertiary-heading">Category</h3>
-						<fieldset id="category_filter">
+						<h3 class="tertiary-heading serif">Category</h3>
+						<fieldset class="filter_items">
 							<legend class="access-hidden">Category</legend>
 							<ul id="category_filter"></ul>
 						</fieldset>
 
-						<h3 class="tertiary-heading">Colors</h3>
-						<fieldset>
+						<h3 class="tertiary-heading serif">Colors</h3>
+						<fieldset class="filter_items">
 							<legend class="access-hidden">Colors</legend>
 							<ul id="color_filter"></ul>
 						</fieldset>
@@ -192,6 +192,7 @@
 									<option value="lowhigh">Low &mdash; High</option>
 									<option value="highlow">High &mdash; Low</option>
 								</select>
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
 							</div>
 							<div class="view">
 								View

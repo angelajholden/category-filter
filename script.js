@@ -58,7 +58,7 @@ function getProducts(products, reset = false) {
 		let displayPrice = `${fmt.format(product.price)}`;
 		if (product.sale && product.discount) {
 			const salePrice = product.price - product.price * (product.discount / 100);
-			displayPrice = `<span>${fmt.format(salePrice)}</span><span>${fmt.format(product.price)}</span>`;
+			displayPrice = `<span class="sale">${fmt.format(salePrice)}</span><span class="regular">${fmt.format(product.price)}</span>`;
 		}
 
 		// Set inner HTML
