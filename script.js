@@ -2,8 +2,6 @@
 const body = document.querySelector("body");
 const buttons = document.querySelectorAll(".menu_button");
 const open = document.querySelector(".open_button");
-const main = document.querySelector("main");
-const overlay = document.getElementById("overlay");
 
 // Sidebar filter toggle logic
 function toggleFilterSidebar() {
@@ -13,11 +11,9 @@ function toggleFilterSidebar() {
 	if (body && filterOpenBtn && filterCloseBtn) {
 		filterOpenBtn.addEventListener("click", function () {
 			body.classList.add("filter_active");
-			main.setAttribute("inert", "");
 		});
 		filterCloseBtn.addEventListener("click", function () {
 			body.classList.remove("filter_active");
-			main.removeAttribute("inert");
 		});
 	}
 }
@@ -33,10 +29,8 @@ function toggleMenu() {
 			const isActive = body.classList.toggle("menu_active");
 			if (isActive) {
 				open.setAttribute("aria-expanded", "true");
-				main.setAttribute("inert", "");
 			} else {
 				open.setAttribute("aria-expanded", "false");
-				main.removeAttribute("inert");
 			}
 		});
 	});
@@ -95,9 +89,8 @@ function getProducts(products, reset = false) {
 	});
 
 	// Update currentIndex
-	// Move currentIndex forward by number of items displayed
-	// If fewer items were displayed than itemsToShow, we've reached the end
-	// and currentIndex should be set to products.length
+	// Move currentIndex forward to products.length when reaching the end
+	// Update first and last visible item indices
 	const firstItemEls = document.querySelectorAll("#first_item");
 	const lastItemEls = document.querySelectorAll("#last_item");
 	const totalItemsEls = document.querySelectorAll("#total_items");
@@ -351,6 +344,19 @@ function resetFilters() {
 	}
 }
 
+// Close nav or filter drawer on Escape key
+function handleEscapeClose() {
+	document.addEventListener("keydown", function (e) {
+		if (e.key === "Escape") {
+			// Close nav drawer
+			document.body.classList.remove("menu_active");
+			// Close filter drawer
+			document.body.classList.remove("filter_active");
+			main.removeAttribute("inert");
+		}
+	});
+}
+
 // Initialize on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
 	toggleMenu();
@@ -359,20 +365,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	resetFilters();
 	// Sidebar filter toggle
 	toggleFilterSidebar();
+	handleEscapeClose();
 });
-
-// Sidebar filter toggle logic
-function toggleFilterSidebar() {
-	const body = document.querySelector("body");
-	const filterOpenBtn = document.querySelector(".filter_open");
-	const filterCloseBtn = document.querySelector(".filter_close");
-
-	if (body && filterOpenBtn && filterCloseBtn) {
-		filterOpenBtn.addEventListener("click", function () {
-			body.classList.add("filter_active");
-		});
-		filterCloseBtn.addEventListener("click", function () {
-			body.classList.remove("filter_active");
-		});
-	}
-}
