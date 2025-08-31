@@ -2,6 +2,25 @@
 const body = document.querySelector("body");
 const buttons = document.querySelectorAll(".menu_button");
 const open = document.querySelector(".open_button");
+const main = document.querySelector("main");
+const overlay = document.getElementById("overlay");
+
+// Sidebar filter toggle logic
+function toggleFilterSidebar() {
+	const filterOpenBtn = document.querySelector(".filter_open");
+	const filterCloseBtn = document.querySelector(".filter_close");
+
+	if (body && filterOpenBtn && filterCloseBtn) {
+		filterOpenBtn.addEventListener("click", function () {
+			body.classList.add("filter_active");
+			main.setAttribute("inert", "");
+		});
+		filterCloseBtn.addEventListener("click", function () {
+			body.classList.remove("filter_active");
+			main.removeAttribute("inert");
+		});
+	}
+}
 
 // Toggle menu visibility
 function toggleMenu() {
@@ -14,8 +33,10 @@ function toggleMenu() {
 			const isActive = body.classList.toggle("menu_active");
 			if (isActive) {
 				open.setAttribute("aria-expanded", "true");
+				main.setAttribute("inert", "");
 			} else {
 				open.setAttribute("aria-expanded", "false");
+				main.removeAttribute("inert");
 			}
 		});
 	});
@@ -336,4 +357,22 @@ document.addEventListener("DOMContentLoaded", () => {
 	initProductsAndFilters();
 	sortProducts();
 	resetFilters();
+	// Sidebar filter toggle
+	toggleFilterSidebar();
 });
+
+// Sidebar filter toggle logic
+function toggleFilterSidebar() {
+	const body = document.querySelector("body");
+	const filterOpenBtn = document.querySelector(".filter_open");
+	const filterCloseBtn = document.querySelector(".filter_close");
+
+	if (body && filterOpenBtn && filterCloseBtn) {
+		filterOpenBtn.addEventListener("click", function () {
+			body.classList.add("filter_active");
+		});
+		filterCloseBtn.addEventListener("click", function () {
+			body.classList.remove("filter_active");
+		});
+	}
+}

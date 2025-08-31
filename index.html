@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<script defer src="script.js"></script>
 	</head>
-	<body class>
+	<body class="">
 		<header class="header">
 			<h1 class="access-hidden">Category Filter Project</h1>
 			<!-- Dark BG -->
@@ -139,11 +139,24 @@
 				</nav>
 			</div>
 		</header>
+		<div id="overlay" class="overlay" aria-hidden="true"></div>
 		<main class="main">
 			<div class="page_name serif">Category Filter</div>
 
 			<div class="grid_wrap">
+				<button class="filter_button filter_open" type="button">
+					Filter
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 128h80M64 128h240M368 384h80M64 384h240M208 256h240M64 256h80" />
+						<circle cx="336" cy="128" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<circle cx="176" cy="256" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<circle cx="336" cy="384" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+					</svg>
+				</button>
 				<aside class="sidebar_filter">
+					<button aria-label="Close Filter" class="filter_button filter_close" aria-label="Close Menu">
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
+					</button>
 					<form id="filters" aria-label="Product Filters">
 						<h3 class="tertiary-heading serif">
 							<label for="search">Search</label>
@@ -186,7 +199,7 @@
 								</select>
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144" /></svg>
 							</div>
-							<div class="view">
+							<!-- <div class="view">
 								View
 								<button aria-label="Grid View">
 									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
@@ -204,7 +217,7 @@
 										<circle cx="80" cy="368" r="16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 									</svg>
 								</button>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div id="products" class="product_grid"></div>
