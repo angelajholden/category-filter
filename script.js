@@ -11,9 +11,11 @@ function toggleFilterSidebar() {
 	if (body && filterOpenBtn && filterCloseBtn) {
 		filterOpenBtn.addEventListener("click", function () {
 			body.classList.add("filter_active");
+			filterOpenBtn.setAttribute("aria-expanded", "true");
 		});
 		filterCloseBtn.addEventListener("click", function () {
 			body.classList.remove("filter_active");
+			filterOpenBtn.setAttribute("aria-expanded", "false");
 		});
 	}
 }
@@ -352,7 +354,6 @@ function handleEscapeClose() {
 			document.body.classList.remove("menu_active");
 			// Close filter drawer
 			document.body.classList.remove("filter_active");
-			main.removeAttribute("inert");
 		}
 	});
 }

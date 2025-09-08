@@ -144,7 +144,7 @@
 			<div class="page_name serif">Category Filter</div>
 
 			<div class="grid_wrap">
-				<button class="filter_button filter_open" type="button">
+				<button class="filter_button filter_open" type="button" aria-controls="sidebarFilter" aria-expanded="false">
 					Filter
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 128h80M64 128h240M368 384h80M64 384h240M208 256h240M64 256h80" />
@@ -153,8 +153,8 @@
 						<circle cx="336" cy="384" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 					</svg>
 				</button>
-				<aside class="sidebar_filter">
-					<button aria-label="Close Filter" class="filter_button filter_close" aria-label="Close Menu">
+				<aside id="sidebarFilter" class="sidebar_filter">
+					<button type="button" aria-label="Close Filter" class="filter_button filter_close">
 						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" /></svg>
 					</button>
 					<form id="filters" aria-label="Product Filters">
